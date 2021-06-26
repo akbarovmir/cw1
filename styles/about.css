@@ -32,6 +32,6 @@ main .card h2:last-of-type {
 
 @media (max-width: 450px) {
   main {
-    margin: 10px;
+    margin: 20px;
   }
 }

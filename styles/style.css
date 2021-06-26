@@ -7,6 +7,28 @@
   box-sizing: border-box;
 }
 
+body.dark {
+  background-color: #222;
+}
+
+body.dark * {
+  color: white !important;
+}
+
+body.dark a {
+  color: #58a6ff !important;
+}
+
+body.dark .logo a {
+  color: #fff !important;
+}
+
+body.dark input,
+body.dark textarea {
+  background-color: #444;
+  border: 1px solid #888;
+}
+
 a {
   color: #0000ee;
   text-decoration: none;
