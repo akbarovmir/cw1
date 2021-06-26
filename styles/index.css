@@ -33,9 +33,21 @@ main .card button {
   margin-top: 10px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 649px) {
   main .cardContainer {
     grid-template-columns: 1fr;
-    padding: 20px ;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main .cardContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+  main .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

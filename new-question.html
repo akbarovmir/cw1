@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/newquestion.css" />
     <title>New question</title>
   </head>
@@ -18,12 +18,17 @@
     </header>
     <main>
       <div class="formContainer">
-        <form id='form'>
+        <form id="form">
           <h2>Ask a new question</h2>
           <label for="name">Your name</label>
-          <input type="text" id="name">
+          <input type="text" placeholder="Enter your name" id="name" />
           <label for="question">Question</label>
-          <textarea name="question" id="question" cols="30" rows="10"></textarea>
+          <textarea
+            name="question"
+            id="question"
+            placeholder="Type your question"
+            rows="10"
+          ></textarea>
           <button type="submit">Post</button>
         </form>
       </div>

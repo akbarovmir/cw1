@@ -30,8 +30,9 @@ main .card h2:last-of-type {
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
   main {
-    margin: 20px;
+    padding: 0 20px
   }
 }
+
