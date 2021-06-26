@@ -29,6 +29,10 @@ body.dark textarea {
   border: 1px solid #888;
 }
 
+body.dark header {
+  box-shadow: 0 0 5px #ffffff99;
+}
+
 a {
   color: #0000ee;
   text-decoration: none;
