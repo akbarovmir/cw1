@@ -4,6 +4,9 @@ const Card = (data) => {
   const card = document.createElement('div');
   card.classList.add('card');
 
+  const name = document.createElement('h5');
+  name.textContent = data.name;
+
   const p = document.createElement('p');
   p.textContent = data.question;
 
@@ -13,6 +16,7 @@ const Card = (data) => {
     window.location.href = `/question.html?id=${data.id}`;
   };
 
+  card.appendChild(name);
   card.appendChild(p);
   card.appendChild(button);
 
@@ -21,11 +25,11 @@ const Card = (data) => {
 
 window.onload = () => {
   if (!localStorage.getItem('questions')) {
-    localStorage.setItem('questions', JSON.stringify(db))
+    localStorage.setItem('questions', JSON.stringify(db));
   }
-  
-  let question = JSON.parse(localStorage.getItem('questions'))
-  
+
+  let question = JSON.parse(localStorage.getItem('questions'));
+
   question.forEach((cardData) => {
     cardContainer.appendChild(Card(cardData));
   });
