@@ -1,0 +1,37 @@
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+main .card {
+  width: 100%;
+  background-color: #aaaaaa30;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+ul li {
+  list-style: none;
+}
+
+main .card h2 {
+  margin-bottom: 20px;
+}
+
+main .card h2:last-of-type {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 450px) {
+  main {
+    margin: 10px;
+  }
+}

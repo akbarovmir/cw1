@@ -37,6 +37,7 @@ form label {
 }
 
 form textarea {
+  resize: none;
   padding: 10px;
 }
 
