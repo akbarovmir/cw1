@@ -1,6 +1,13 @@
 main {
-  max-width: 500px;
-  margin: 30px auto
+  max-width: 900px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+main > div:first-child {
+  width: 50% !important;
 }
 
 main .card {
@@ -11,8 +18,8 @@ main .card {
   border-radius: 10px;
   padding: 10px;
   display: flex;
-  height: 100%;
-  margin-bottom: 5px;
+  /* height: 100%; */
+  margin-bottom: 10px;
   flex-direction: column;
 }
 
@@ -47,11 +54,21 @@ form button {
 }
 
 #answers {
-  margin-top: 20px;
+  width: 50%;
+}
+
+#answers > h3 {
+  line-height: 40px;
 }
 
 @media (max-width: 450px) {
   main {
     margin: 10px;
+    flex-direction: column;
+  }
+
+  main div:first-child,
+  main div {
+    width: 100% !important;
   }
 }

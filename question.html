@@ -17,25 +17,29 @@
       </ul>
     </header>
     <main>
-      <div class="card">
-        <h3 id="name"></h3>
-        <p id="question"></p>
+      <div>
+        <div class="card">
+          <h3 id="name"></h3>
+          <p id="question"></p>
+        </div>
+        <div class="card">
+          <form id="form">
+            <label for="nameInput">Your name</label>
+            <input type="text" id="nameInput" />
+            <label for="answerInput">Answer</label>
+            <textarea
+              name="answerInput"
+              id="answerInput"
+              cols="20"
+              rows="5"
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
-      <div class="card">
-        <form id="form">
-          <label for="nameInput">Your name</label>
-          <input type="text" id="nameInput" />
-          <label for="answerInput">Answer</label>
-          <textarea
-            name="answerInput"
-            id="answerInput"
-            cols="20"
-            rows="5"
-          ></textarea>
-          <button type="submit">Send</button>
-        </form>
+      <div id="answers">
+        <h3>Answers</h3>
       </div>
-      <div id="answers"></div>
     </main>
     <footer>
       Copyright &copy; 2021 |

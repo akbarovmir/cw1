@@ -15,10 +15,13 @@ window.onload = () => {
   nameField.textContent = question.name;
   questionField.textContent = question.question;
 
-  question.answers.forEach((answer) => {
-    console.log(answer);
-    answersContainer.appendChild(populateAnswers(answer));
-  });
+  if (question.answers.length > 0) {
+    question.answers.forEach((answer) => {
+      answersContainer.appendChild(populateAnswers(answer));
+    });
+  } else {
+    answersContainer.innerHTML = '<h3>No answers</h3>';
+  }
 };
 
 const populateAnswers = (answer) => {
@@ -33,8 +36,6 @@ const populateAnswers = (answer) => {
 
   divCard.appendChild(name);
   divCard.appendChild(answerField);
-
-  console.log(answer.text);
 
   return divCard;
 };
