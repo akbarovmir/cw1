@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 2000px;
 }
 
 header {
@@ -16,6 +21,10 @@ header {
 
 header h1.logo {
   font-weight: 700;
+}
+
+header h1.logo a {
+  color: #000;
 }
 
 header ul {
@@ -43,4 +52,37 @@ main .card {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+main .card p {
+  flex-grow: 1;
+}
+
+main .card button {
+  background-color: #6666ff;
+  padding: 5px 15px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+footer a {
+  background-color: #222;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
