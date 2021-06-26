@@ -1,9 +1,9 @@
 main {
+  max-width: 500px;
   margin: 30px auto
 }
 
-main .formContainer {
-  max-width: 500px;
+main .card {
   width: 100%;
   background-color: #aaaaaa30;
   margin: auto;
@@ -12,16 +12,13 @@ main .formContainer {
   padding: 10px;
   display: flex;
   height: 100%;
+  margin-bottom: 5px;
   flex-direction: column;
 }
 
 main form {
   display: flex;
   flex-direction: column;
-}
-
-form h2 {
-  line-height: 40px;
 }
 
 form input {
@@ -32,7 +29,7 @@ form input {
   padding: 0 10px;
 }
 
-form label {
+form label:last-of-type {
   margin-top: 20px;
 }
 
@@ -46,6 +43,10 @@ form button {
   background-color: #6666ff;
   border: none;
   color: #fff;
+  margin-top: 20px;
+}
+
+#answers {
   margin-top: 20px;
 }
 

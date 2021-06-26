@@ -23,11 +23,12 @@ form.onsubmit = (e) => {
     id: genereteUID(),
     name: e.target.name.value,
     question: e.target.question.value,
+    answers: [],
   };
 
   questions.push(newQuestion);
 
   localStorage.setItem('questions', JSON.stringify(questions));
-  alert('Successfully posted!')
-  window.location.reload()
+  alert('Successfully posted!');
+  window.location.reload();
 };

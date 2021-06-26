@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/question.css" />
+    <title>Question</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo"><a href="/">Q. & A.</a></h1>
+      <ul>
+        <li><a href="/new-question.html">Ask new</a></li>
+        <li><a href="/settings.html">Settings</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="card">
+        <h3 id="name"></h3>
+        <p id="question"></p>
+      </div>
+      <div class="card">
+        <form id="form">
+          <label for="nameInput">Your name</label>
+          <input type="text" id="nameInput" />
+          <label for="answerInput">Answer</label>
+          <textarea
+            name="answerInput"
+            id="answerInput"
+            cols="20"
+            rows="5"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div id="answers"></div>
+    </main>
+    <footer>
+      Copyright &copy; 2021 |
+      <a href="/about.html">About</a>
+    </footer>
+    <script src="/db/questions.js"></script>
+    <script src="/scripts/question.js"></script>
+  </body>
+</html>
